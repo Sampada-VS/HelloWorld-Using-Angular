@@ -8,10 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HelloWorld';
   imgUrl="";
+  url="";
 
   ngOnInit() : void{
     this.title="Hello From BridgeLabz";
     this.imgUrl="../assets/bridgelabz_logo.png";
+    this.url="https://www.bridgelabz.com";
+  }
+  onClick($event){
+    window.open(this.url,"_blank");
   }
 }
 
